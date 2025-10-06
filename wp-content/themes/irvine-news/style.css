@@ -1,0 +1,192 @@
+/*
+Theme Name: Irvine News
+Theme URI: https://themearile.com/irvine-news-theme/
+Template: newsexo
+Author: ThemeArile
+Author URI: https://themearile.com
+Description: Irvine News is an ideal and modern WordPress theme for blogs, magazines, newspapers, news portals, and publishing websites. It has a unique design for a visually stunning layout that makes your content displays beautiful and easy to read for any media device. It is even user-friendly, SEO-ready, effortlessly, lightweight, and optimized for top performance and Core Web Vitals. The theme is best suitable for news, magazines, publishers, editors, news portals, newspapers, personal blogs, news editorials, guides, journalism, travel blogs, niche blogs, affiliate blogs, guest blogging, and reviews websites. It also has flexible and versatile layouts that are enough for essential needs, with unlimited colors, unlimited Google fonts, typography, responsive design, and Rtl language support. It is designed to be highly SEO-friendly that can help optimize your website on search engine performance, making it easier to find for potential visitors and the theme provides predefined beautiful demos that can be imported with one click in less time. Irvine News also supports popular free and premium WordPress plugins such as Elementor, Yoast SEO, WooCommerce, Gutenberg, Contact Form 7, Jetpack, Google Analytics, and much more. Check the demo of Irvine News Pro https://newsexo-pro-nine.themearile.com/.
+Version: 1.5
+Tested up to: 6.8
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: irvine-news
+Tags: one-column, two-columns, right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+*/
+
+/*--------------------------------------------------
+=>> Body Custom Background Css
+--------------------------------------------------*/
+
+body.custom-background .theme-bg-dark,
+body.custom-background .theme-bg-default, 
+body.custom-background .theme-blog.theme-bg-grey {
+    background-color: transparent !important;
+}
+
+/*--------------------------------------------------------------
+=>> Typography Css
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------
+=>> Logo and Banner
+--------------------------------------------------------------*/
+
+.logo-banner .site-title a{ color: #ffffff; }
+
+/*--------------------------------------------------------------
+=>> Site Header
+--------------------------------------------------------------*/
+
+.site-header {
+    background: #111111 !important;
+}
+.head-contact-info li span.newsexo-time {
+    background-color: #1b8415 !important;
+}
+.head-contact-info li span.newsexo-time {
+    color: #ffffff !important;
+}
+.head-contact-info li, .site-header .custom-social-icons .followus {
+    color: #ffffff !important;
+}
+.custom-social-icons .followus:before, .custom-social-icons .followus:after {
+    background: #ffffff !important;
+}
+.site-header .custom-social-icons li > a {
+    color: #ffffff !important;
+}
+
+/*--------------------------------------------------------------
+=>> Blog Meta
+--------------------------------------------------------------*/
+
+.entry-meta > span { 
+	margin: 0 0.875rem 0 0 !important;
+}
+.entry-meta > span i {
+    margin-right: 0.350rem;
+}
+.entry-meta .avatar-default {
+    margin-right: 0.350rem;
+}
+/*Category Colors*/
+.entry-meta .cat-links .links-bg:nth-child(2) {
+	background: #01012f;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(3) {
+	background: #56ca71;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(4) {
+	background: #6610f2;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(5) {
+	background: #ff5d20;
+	color: #fff;
+}
+.entry-meta .cat-links .links-bg:nth-child(6) {
+	background: #0263D0;
+	color: #fff;
+}
+/*Pagination*/
+.navigation.pagination .nav-links .page-numbers, 
+.navigation.pagination .nav-links a {
+	border: 1px solid #ebebeb;
+}
+.pagination a {
+	background-color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+=>> All Blog Posts Common Classes for Spacing
+--------------------------------------------------------------*/
+
+@media (min-width: 200px) and (max-width: 991.98px) {
+	#featured-news-slider.owl-carousel.three-three .post.overlay-news-area {
+		margin-bottom: 0;
+	}
+}
+
+/*--------------------------------------------------------------
+=>> Sidebar Widgets
+--------------------------------------------------------------*/
+
+.sidebar.vrsn-three .widget {
+	background-color: #fff;
+	border: 1px solid #ebebeb;
+	padding: 0.938rem 0.75rem;
+	position: relative;
+    -webkit-transition: all .1s;
+    -ms-transition: all .1s;
+    -moz-transition: all .1s;
+    transition: all .1s;
+}
+.sidebar.vrsn-three .widget:hover {
+	box-shadow: 0 10px 15px 0 rgba(0,0,0,0.1);
+	border-top: 2px solid #13171e;
+	-webkit-transition: all .5s;
+	-ms-transition: all .5s;
+	-moz-transition: all .5s;	
+	transition: all .5s;
+	transform : translateY(-5px);
+}
+/*List View Post Widget*/
+.list-view-post-widget .post .entry-header .entry-title {
+    line-height: 1.5;
+}
+
+/*--------------------------------------------------------------
+=>> Footer Section & Widgets
+--------------------------------------------------------------*/
+
+.site-footer-overlay::before {
+	background: #111111;
+}
+
+/*--------------------------------------------------------------
+=>> Default Page Templates 
+--------------------------------------------------------------*/
+
+body.page-template-default .blog-grid-view-post .sidebar .widget .list-view-post-widget .post {
+	border-bottom: 1px solid #f1f1f1;
+	padding: 0.938rem 0 0.938rem 0;
+}
+
+
+/*--------------------------------------------------------------
+=>> Sidebar Update Released 
+--------------------------------------------------------------*/
+
+.wp-block-latest-posts li {
+    padding-bottom: 1rem;
+}
+.wp-block-latest-posts li .wp-block-latest-posts__post-date {
+    padding-top: 0.525rem;
+}
+.wp-block-archives li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-categories-list li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-list li {
+	padding-bottom: 0.625rem;
+}
+.post .wp-block-list li ul li:first-child {
+	padding-top: 0.625rem;
+}
+.post .wp-block-list li:last-child, 
+.post .wp-block-list li ul li:last-child {
+	padding-bottom: 0;
+}
+.wp-block-file .wp-block-file__button {
+	text-decoration: none;
+}

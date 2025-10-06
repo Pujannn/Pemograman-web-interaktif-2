@@ -1,0 +1,52 @@
+/*
+Theme Name: News Digest
+Author: ThemeArile 
+Copyright (c) 2024 News Digest
+http://www.themearile.com
+Name: jquery.smartmenus.bootstrap-4.css
+*/
+
+/* Carets in collapsible mode (make them look like +/- buttons) */
+
+.navbar-dark {
+    border-top: 4px solid #1b8415;
+	background-color: #111111;
+}
+.navbar.navbar-dark .nav .menu-item .nav-link {
+    color: #ffffff;
+}
+@media (min-width: 992px) {
+    .navbar.navbar-dark .nav .menu-item:hover .nav-link, .navbar.navbar-dark .nav .menu-item.active .nav-link {
+        background-color: #1b8415 !important;
+		color: #ffffff;
+    }
+}
+.navbar.navbar-dark .theme-search-block > a {
+    color: #ffffff;
+}
+@media (max-width: 991px) {
+    .navbar.navbar-dark .nav .menu-item .nav-link {
+        border-bottom: 1px solid rgb(165 159 159 / 10%);
+    }
+}
+.navbar.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 1);
+    border-radius: 0;
+    padding: 0.25rem 0.75rem;
+}
+.navbar.navbar-dark .nav .dropdown-menu {
+    background-color: #ffffff;
+}
+@media (min-width: 992px) {
+    .navbar.navbar-dark .nav .dropdown-item {
+        color: #1f2024;
+    }
+}
+@media (max-width: 991px) {
+    .navbar.navbar-dark .nav .dropdown-menu .dropdown-item {
+        color: #1f2024;
+    }
+}
+.navbar.navbar-dark .nav .dropdown-menu > .menu-item > ul.dropdown-menu > .menu-item > .dropdown-item {
+    color: #1f2024;
+}
